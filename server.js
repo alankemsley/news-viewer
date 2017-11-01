@@ -5,6 +5,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var axios = require("axios");
 var cheerio = require("cheerio");
+var exphbs = require("express-handlebars");
 
 // Require all models
 var db = require("./models");
@@ -13,6 +14,10 @@ var PORT = 3000;
 
 // Initialize Express
 var app = express();
+
+// Configure Handlebars
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // Configure middleware
 

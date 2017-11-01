@@ -1,0 +1,29 @@
+{
+  "name": "news-viewer",
+  "version": "1.0.0",
+  "description": "An application that pulls news articles, allows users to save them, and to add notes to them.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alankemsley/news-viewer.git"
+  },
+  "author": "Alan Kemsley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alankemsley/news-viewer/issues"
+  },
+  "homepage": "https://github.com/alankemsley/news-viewer#readme",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongo": "^0.1.0",
+    "mongose": "0.0.2-security",
+    "morgan": "^1.9.0"
+  }
+}
